@@ -1,42 +1,42 @@
 $(document).ready(function () {
 
       const questions = [{
-          question: "Will my code work?",
-          answers: [
-            "Absolutely",
-            "Maybe",
-            "Doubtful",
-            "Not in this lifetime"
-          ],
-          correctAnswer: "a"
+          question: "What is the capital of Madagascar?",
+          answers: {
+            a: "Atoll",
+            b: "Nairobi",
+            c: "Masern",
+            d: "Antananarivo"
+          },
+          correctAnswer: "d"
         },
         {
-          question: "Will my code work?",
-          answers: [
-            "Absolutely",
-            "Maybe",
-            "Doubtful",
-            "Not in this lifetime"
-          ],
+          question: "What is the capital of Mali?",
+          answers: {
+            a: "Amman",
+            b: "Dublin",
+            c: "Bamako",
+            d: "Vanduz"
+          },
           correctAnswer: "c"
         },
         {
-          question: "Will my code work?",
-          answers: [
-            "Absolutely",
-            "Maybe",
-            "Doubtful",
-            "Not in this lifetime"
-          ],
+          question: "What is the capital of Kyrgyzstan?",
+          answers: {
+            a: "Masern",
+            b: "Bishkek",
+            c: "Baghdad",
+            d: "Jakarta"
+          },
           correctAnswer: "b"
         },
         {
-          question: "Will my code work?",
+          question: "What is the capital of Morocco?",
           answers: {
-            a: "Absoultey",
-            b: "Maybe",
-            c: "Doubtful",
-            d: "Not in this lifetime"
+            a: "Manila",
+            b: "Nairobi",
+            c: "Atoll",
+            d: "Rabat"
           },
           correctAnswer: "d"
         },
@@ -150,28 +150,8 @@ $(document).ready(function () {
   results.innerHTML = `${correct} out of ${questions.length}`;
   }
 
-
-
-
-
-
-     
-
-
-
-
-
-
-      // SHOW LAYOUT OF THE GAME \\
       start();
 
-
-
-
-
-
-
-      // SHOW PLAYER'S RESULTS ON CLICK OF SUBMIT BUTTON (EVENTLISTENER) \\
       submitBtn.addEventListener("click", checkResults);
      
       

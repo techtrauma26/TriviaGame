@@ -2,30 +2,43 @@
     position: relative;
     height: 200px;
     margin-top: 40px;
+
   }
+  
+  body {
+
+	background-color: bisque;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777;
+  line-height: 28px;
+}
+
   header {
-    
+    font: 500px;
+    text-align: center;
   }
   h1 {
     margin: 100px;
-    color: aqua;
+    color: midnightblue;
+    font: 500px;
+    text-align: center;
   }
   
   #timer {
-    
+    margin: 100px;
+    color: midnightblue;
+    font: 500px;
   }
   #trivia{
-    
+    margin: 100px;
+    color: midnightblue;
+    font: 500px;
   }
-  #submit{ 
-    
-  }
+
     
   #yourResults{
-    
+    margin: 100px;
+    color: midnightblue;
+    font: 500px;
   }
-  
-  body{
-    
-  }
-  
