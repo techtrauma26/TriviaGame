@@ -45,7 +45,7 @@ $(document).ready(function () {
 
   function runTime() {
     $("#timer").text("Time remaining: " + timerNum + " seconds");
-    timeInterval = setInterval(decrement, 1000);
+     timeInterval = setInterval(decrement, 1000);
 
   };
 
@@ -53,20 +53,19 @@ $(document).ready(function () {
     timerNum--;
     console.log(timerNum);
     $("#timer").text("Time remaining: " + timerNum + " seconds");
-
-    if (timerNum === 0) {
-      stop();
-      // checkResults();
-      alert("Time Up!");
-      $("#timer").empty();
+    if (timerNum < 0) {
+      clearInterval(timeInterval)
+      // stop();
+      checkResults();
+         $("#timer").empty();
     };
   };
 
-  function stop() {
-    clearInterval();
-    // clearInterval(setInterval(decrement, 1000));
-    checkResults();
-  };
+  // function stop() {
+  //   clearInterval();
+  //   // clearInterval(setInterval(decrement, 1000));
+  //   checkResults();
+  // };
 
   // // Creating radio buttons //
   // function showQ ()   {
